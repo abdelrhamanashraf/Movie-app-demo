@@ -33,7 +33,7 @@ export async function updateMe(token, info) {
   withCredentials: false})
   return response.data.data;
 }
-const API_KEY ="c5f1c936ffde15474bbeea3949a1ef0f";
+const API_KEY ="TMDB_API_KEY";
 export async function getMovies() {
 const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY} ` )
 console.log(response.data.results);
